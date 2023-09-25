@@ -88,3 +88,10 @@
 # print(oct(8))
 # print(oct(9))
 # print(oct(16))
+
+# print(int(3.14159))
+# print(3.14159)
+# print(int(7/3))
+# print(7/3)
+# print(int('3000'))
+# print('3000')
