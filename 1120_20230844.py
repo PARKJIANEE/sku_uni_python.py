@@ -1,71 +1,72 @@
-# # import math
-# # print(dir(math))
+# # chapter 8
+# import math
+# print(dir(math))
 
-# # def factorial(n):
+# def factorial(n):
 
-# #     result =1
-# #     for i in range(1, n + 1):
-# #         result += i
+#     result =1
+#     for i in range(1, n + 1):
+#         result += i
         
-# #     return result
+#     return result
 
-# # print("5! = ", factorial(5))
+# print("5! = ", factorial(5))
 
-# # import math
+# import math
 
-# # a = math.factorial(5)
-# # print("5! = ", a)
+# a = math.factorial(5)
+# print("5! = ", a)
 
-# # from math import comb
-# # b = math.comb(5, 2)
-# # print('5 Combination 2 = ', b)
+# from math import comb
+# b = math.comb(5, 2)
+# print('5 Combination 2 = ', b)
 
-# # from math import *
-# # print(pi)
+# from math import *
+# print(pi)
 
-# # from math import pow, sqrt
+# from math import pow, sqrt
 
-# # a = pow(2, 3)
-# # b = sqrt(4)
+# a = pow(2, 3)
+# b = sqrt(4)
 
-# # print('pow(2, 3) = ', a)
-# # print('sqrt(4) = ', b)
+# print('pow(2, 3) = ', a)
+# print('sqrt(4) = ', b)
 
-# # from math import pow as p
+# from math import pow as p
 
-# # a = p(2, 3)
+# a = p(2, 3)
 
-# # print('p(2, 3) = ', a)
+# print('p(2, 3) = ', a)
 
-# # from math import pow as p, sqrt as s
+# from math import pow as p, sqrt as s
 
-# # a = p(2, 3)
-# # b = s(4)
+# a = p(2, 3)
+# b = s(4)
 
-# # print('p(2, 3) = ', a)
-# # print('s(4) = ', b)
+# print('p(2, 3) = ', a)
+# print('s(4) = ', b)
 
-# # import math
+# import math
 
-# # a = math.pow(2, 3)
-# # b = math.sqrt(4)
+# a = math.pow(2, 3)
+# b = math.sqrt(4)
 
-# # print('math.pow(2, 3) = ', a)
-# # print('math.sqrt(4) = ', b)
-# # del math
-# # print(dir(math))
+# print('math.pow(2, 3) = ', a)
+# print('math.sqrt(4) = ', b)
+# del math
+# print(dir(math))
 
-# # import math
-# # a = math.pow(2, 3)
-# # b = math.sqrt(4)
+# import math
+# a = math.pow(2, 3)
+# b = math.sqrt(4)
 
-# # print('math.pow(2, 3) = ', a)
-# # print('math.sqrt(4) = ', b)
-# # del math
-# # import importlib
-# # import math
-# # importlib.reload(math)
-# # print(dir(math))
+# print('math.pow(2, 3) = ', a)
+# print('math.sqrt(4) = ', b)
+# del math
+# import importlib
+# import math
+# importlib.reload(math)
+# print(dir(math))
 
 # import random
 # print(random.random()) 
@@ -166,3 +167,112 @@
 # a = mymod.Circle()
 # print('반지름이 5일 때 원의 넓이 = ', a.com(5))
 
+# # chapter 9
+
+# file = open("test.txt", "w")
+# file.write('Hello World!\n파이썬 월드')
+# file = open("test.txt", "r")
+# read = file.read()
+# print(read)
+# file.close()
+
+# file = open("test.txt", "x")
+# file.write('대한민국 만세!!')
+# file.close()
+# file = open("test.txt", "r")
+# read = file.read()
+# print(read)
+# file.close()
+
+# with open('test1.txt', 'x') as file:
+#     file.write('대한민국 만세!!')
+
+# with open("test1.txt", "r") as file:
+#     read = file.read()
+#     print(read)
+
+# f = open("note_two.txt", "w")
+# msg1 = "Hello World \n"
+# msg2 = "Welcome to Pyhton \n"
+# msg3 = "Pyhton is fun \n"
+# f.write(msg1)
+# f.write(msg2)
+# f.write(msg3)
+# f = open("note_two.txt", "r")
+# print(f.read())
+# f.close()
+
+# with open("note_two.txt", "w") as f:
+#     msg1 = "Hello World \n"
+#     msg2 = "Welcome to Pyhton \n" 
+#     msg3 = "Pyhton is fun \n"
+#     a = 3000
+#     b= 60
+#     c =100
+#     f.write(msg1)
+#     f.write(msg2)
+#     f.write(msg3)
+#     f.write(f"{a}\n")
+#     f.write(f"{b}\n")
+#     f.write(f"{c}\n")
+
+# with open("note_two.txt", "r") as f:
+#     print(f.read())
+
+# with open("note_two.txt", "r") as f:
+#     for msg in f:
+#         print(msg)
+
+# import csv
+# listing = [['Maliby', 'Chevrolet',22965],
+# ['Fusion','Ford',23735],
+# ['Accord','Honda',24615],
+# ['Sonata','Hyundai',23185],
+# ['Altima','Nissan',246451],
+# ['Camry','Toyota',24765]]
+
+# with open("car.csv", "w", newline='') as f:
+#     car_writer = csv.writer(f)
+#     car_writer.writerows(listing)
+
+# with open("car.csv", "r") as f:
+#     car_reader = csv.reader(f)
+#     for row in car_reader:
+#         names = row[0]
+#         print(names)
+
+# def divide(x, y):
+
+#     try:
+#         result = x / y
+
+#     except ZeroDivisionError as zero_div_err:
+#         print("0으로 나눌 수 없습니다.", zero_div_err)
+
+#     else:
+#         print("정상적으로 나눗셈이 실행되었습니다. 결과는 =", result)
+
+#     finally:
+#         print("\n프로그램을 종료합니다.")
+
+# input_a = int(input('피제수를 입력해 주세요: '))
+# input_b = int(input('제수를 입력해 주세요: '))
+# print()
+# divide(input_a, input_b)
+
+# try:
+#     input_x = int(input('짝수를 입력하세요: '))
+#     if input_x % 2 != 0:
+#         raise Exception('짝수가 아닙니다.')
+    
+#     if input_x == 0:
+#         raise Exception('0을 입력했군요')
+    
+# except Exception as e:
+#     print('예외가 발생했습니다.', a)
+
+# else:
+#     print('잘했습니다. 입력한 수는 짝수입니다.')
+
+# finally:
+#     print("\n프로그램을 종료합니다.")
